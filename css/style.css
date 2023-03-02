@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #180a29;;
+}
+
+.header-content{
+    padding: 30px 0;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content-logo img{
+    margin: 0 10px;
+}
+
+.header-content ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header-content ul li{
+    margin: 8px 10px;
+}
+
+.header-content ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-content ul li button{
+    cursor: pointer;
+    width: 100px;
+    background-color: #00eb84;
+    border-radius: 20px;
+    font-size: 9px;
+    letter-spacing: 1.4px;
+    padding: 10px;
+}
+
+#menu{
+    display: none;
+    color: #fff;
+}
+
+.container-1{
+    width: 100%;
+    background: radial-gradient(49.78% 49.87% at 65.63% 44.55%, #2a004f 8.6%, #180a29 79.39%);
+}
+
+.container-1-content-1{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.container-1-content-1-img{
+    margin: 10px 0;
+    width: 585px;
+    max-width: 100%;
+    height: 600px;
+    background-image: url(./../assets/falling-notebook-dois.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1-content-1-img p{
+    position: relative;
+    top: 60px;
+    color: #fff;
+}
+
+.container-1-content-1-img a{
+    position: relative;
+    top: 40px;
+    margin: 10px;
+    background-image: url(./../assets/icon-play-notebook.svg);
+    height: 75px;
+    width: 75px;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-1-content-1-text{
+    height: 600px;
+    margin: 10px 0;
+    max-width: 585px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-1-content-1-text h1{
+    max-width: 500px;
+    font-size: 3rem;
+}
+
+.container-1-content-1-text p{
+    margin: 15px 0;
+}
+
+.container-1-content-1-text button{
+    margin-top: 25px;
+    cursor: pointer;
+    width: 50%;
+    background-color: #00eb84;
+    border-radius: 40px;
+    letter-spacing: 1.4px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.container-1-content-2{
+    display: flex;
+    justify-content: center;
+}
+
+.container-1-content-3{
+    padding: 10px;
+    max-width: 700px;
+}
+
+.container-1-content-3 h1{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.container-1-content-3 h1 strong{
+    color: #00eb84;
+}
+
+.container-1-content-3 p{
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.container-1-content-4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1-content-4-card{
+    width: 240px;
+    height: 300px;
+    background-color: #2a004f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    transform: translateY(35%);
+}
+
+.container-1-content-4-card-icone{
+    position: relative;
+    padding: 10px;
+    width: 90%;
+    height: 70%;
+}
+
+.container-1-content-4-card-icone h1{
+    color: #fff;
+}
+
+.divider{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.divider-1{
+    height: 5px;
+    width: 20%;
+    margin: 0 5px;
+    background-color: #00eb84;
+    border-radius: 5px;
+}
+
+.divider-2{
+    width: 10%;
+}
+
+.container-1-content-4-text{
+    padding: 15px;
+    color: #00eb84;
+}
+
+
+@media screen and (max-width:1000px) {
+    .header-content ul li{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .container-1-content-2{
+        display: none;
+    }
+}
+
+
+
