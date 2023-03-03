@@ -17,7 +17,11 @@ html,body{
 }
 
 header{
-    background-color: #180a29;;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #180a29;
 }
 
 .header-content{
@@ -65,6 +69,7 @@ header{
 }
 
 .container-1{
+    margin-top: 100px;
     width: 100%;
     background: radial-gradient(49.78% 49.87% at 65.63% 44.55%, #2a004f 8.6%, #180a29 79.39%);
 }
@@ -132,6 +137,7 @@ header{
     margin-top: 25px;
     cursor: pointer;
     width: 50%;
+    min-width: 200px;
     background-color: #00eb84;
     border-radius: 40px;
     letter-spacing: 1.4px;
@@ -161,7 +167,7 @@ header{
 }
 
 .container-1-content-3 p{
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     text-align: center;
     color: #fff;
 }
@@ -220,16 +226,114 @@ header{
     color: #00eb84;
 }
 
+.container-2{
+    padding: 100px 10px 10px 0;
+    background-color: #e5e5e5;
+}
 
-@media screen and (max-width:1000px) {
+.container-2-content-1{
+    padding: 50px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-2-content-1-img{
+    background-image: url(./../assets/img-methodology.webp);
+    background-size: cover;
+    background-position: center;
+    width: 491px;
+    max-width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container-2-content-1-img a{
+    background-image: url(./../assets/icon-play-notebook.svg);
+    height: 75px;
+    width: 75px;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-2-content-1-text{
+    position: relative;
+    bottom: 50px;
+    width: 491px;
+    padding: 20px;
+    color: #2a004f;
+}
+
+.container-2-content-1-text h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container-2-content-1 button{
+    margin-top: 25px;
+    cursor: pointer;
+    width: 30%;
+    background-color: #00eb84;
+    border-radius: 40px;
+    letter-spacing: 1.4px;
+    padding: 20px;
+    font-weight: bold;
+
+    position: relative;
+    left: 200px;
+    bottom: 90px;
+}
+
+@media screen and (max-width:1024px) {
     .header-content ul li{
         display: none;
     }
     #menu{
         display: block;
+        cursor: pointer;
     }
     .container-1-content-2{
         display: none;
+    }
+
+    .container-2-content-1-text{
+        position: static;
+        text-align: center;
+        order: 1;
+    }
+    .container-2-content-1-img{
+        order: 2;
+    }
+    .container-2-content-1 button{
+        position: static;
+        width: 50%;
+        min-width: 200px;
+        order: 3;
+    }
+}
+
+@media screen and (max-width:425px) {
+    html,body{
+        font-size: 14px;
+    }
+    .container-1-content-1-img{
+        height: 400px;
+    }
+    .container-2-content-1-img{
+        height: 200px;
+    }
+    .container-2-content-1 button{
+        width: 80%;
+        height: 70px;
+        border-radius: 25px;
+        font-size: 1.5rem;
     }
 }
 
