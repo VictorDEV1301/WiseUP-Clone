@@ -371,6 +371,108 @@ header{
     font-weight: bold;
 }
 
+.container-4{
+    width: 100%;
+    background-color: #180a29;
+    padding: 80px 0;
+}
+
+.container-4-content-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-4-content-1-container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-4-content-1-container-card-principal{
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    height: 400px;
+    min-width: 200px;
+    background-color: #2a004f;
+    margin: 20px;
+}
+
+.container-4-content-1-container-card-principal h1{
+    color: #00eb84;
+}
+
+.container-4-content-1-container-card-principal p{
+    color: #fff;
+}
+
+.container-4-content-1-container-card-regular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:4;
+    margin: 20px 0;
+}
+
+.container-4-content-1-container-card-regular-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 200px;
+    height: 400px;
+    background-color: #2a004f;
+    border-radius: 10px;
+    margin: auto 5px;
+}
+
+.container-4-content-1-container-card-regular-card p{
+    font-size: 0.8rem;
+    padding: 10px;
+    color: #fff;
+}
+
+.container-4-content-1-container-card-regular-card-img{
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-4-content-1-container-card-regular-card-img img{
+    height: 40px;
+    width: 40px;
+}
+
+.container-4-content-1-container-card-regular-card-img h1{
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.container-4-content-1-container-card-regular-card-img p{
+    color: #888;
+}
+
+.container-4-content-1 button{
+    margin-top: 25px;
+    cursor: pointer;
+    width: 30%;
+    background-color: #00eb84;
+    border-radius: 40px;
+    letter-spacing: 1.4px;
+    padding: 20px;
+    font-weight: bold;
+}
+
 
 
 @media screen and (max-width:1060px) {
@@ -425,6 +527,10 @@ header{
     
     * button{
         font-size: 10px !important;
+    }
+
+    .container-4-content-1-container-card-principal{
+        height: auto;
     }
 }
 
