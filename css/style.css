@@ -449,6 +449,7 @@ header{
 }
 
 .container-4-content-1-container-card-regular-card-img img{
+    cursor: pointer;
     height: 40px;
     width: 40px;
 }
@@ -473,6 +474,55 @@ header{
     font-weight: bold;
 }
 
+.container-5{
+    background-color: #f2f2f2;
+}
+
+.container-5-content-1{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-5-content-1-img img{
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.container-5-content-1-text{
+    padding: 15px;
+    max-width: 450px;
+    font-size: 1.1rem;
+    color: #2a004f;
+}
+
+.container-5-content-1-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.container-5-content-1-text button{
+    margin-top: 25px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #00eb84;
+    border-radius: 40px;
+    letter-spacing: 1.4px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.container-5-content-1-mobile{
+    font-size: 2rem;
+    color: #2a004f;
+    text-align: center;
+    display: none;
+    margin: 40px auto;
+}
 
 
 @media screen and (max-width:1060px) {
@@ -506,6 +556,17 @@ header{
         max-height: none;
         height: auto;
     }
+
+    .container-4-content-1 button{
+        width: 70%;
+    }
+    .container-5-content-1-text button{
+        display: none;
+    }
+
+    .container-5-content-1-mobile{
+        display: block;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -534,5 +595,9 @@ header{
     }
 }
 
-
+@media screen and (max-width:300px) {
+    html,body{
+        font-size: 8px;
+    }
+}
 
