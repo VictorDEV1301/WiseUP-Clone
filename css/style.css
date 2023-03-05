@@ -586,6 +586,105 @@ header{
     font-size: 0.8rem;
     padding: 15px;
 }
+
+.container-7{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container-7-content-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2a004f;
+}
+
+.container-7-content-1-questions{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 0.6rem;
+    margin: 10px;
+    border-radius: 7px;
+    border: solid 1px #313131;
+    padding: 10px;
+    color: #2a004f;
+    width: 70%;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.container-7-content-1-questions img{
+    width: 2%;
+    min-width: 10px;
+    height: auto;
+}
+
+.container-8{
+    background-color: #f2f2f2;
+}
+
+.container-8-content-1{
+    max-width: 460px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.container-8-content-1 h1{
+    margin: 20px 0;
+}
+
+.container-8-content-1 strong{
+    color: #2a004f;
+}  
+
+.container-8-content-1 button{
+    cursor: pointer;
+    width: 60%;
+    background-color: #00eb84;
+    border-radius: 40px;
+    letter-spacing: 1.4px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #180a29;
+    padding: 30px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-content p{
+    margin: 10px;
+    color: #fff;
+    font-size: 0.5rem;
+}
+.footer.content-icons a{
+    margin: 10px;
+}
+
+.footer-content select{
+    margin: 10px;
+    background-color: transparent;
+    color: #fff;
+}
+
 @media screen and (max-width:1060px) {
     .header-content ul li{
         display: none;
@@ -653,6 +752,18 @@ header{
 
     .container-4-content-1-container-card-principal{
         height: auto;
+    }
+
+    .footer-content{
+        flex-direction: column-reverse;
+    }
+
+    .footer-content p{
+        order: 2;
+    }
+
+    .footer-content select{
+        order: 1;
     }
 }
 
