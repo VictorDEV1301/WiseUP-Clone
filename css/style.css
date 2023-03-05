@@ -524,7 +524,68 @@ header{
     margin: 40px auto;
 }
 
+.container-6{
+    width: 100%;
+    background-color: #e5e5e5;
+    padding: 20px;
+}
 
+.container-6-content-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-6-content-1 > h1{
+    font-size: 2rem;
+    color: #2a004f;
+    margin: 40px auto;
+}
+
+.container-6-container-card{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-6-container-card-content-card{
+    margin: 40px 10px;
+    max-width: 200px;
+    height: 300px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container-6-container-card-content-card img{
+    transform: translateY(-40px);
+}
+
+.container-6-container-card-content-card p{
+    color: #2a004f;
+    font-size: 0.8rem;
+}
+
+.container-6-container-card-content-card-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 200px;
+    height: 20%;
+    background-color: #2a004f;
+    font-size: 0.8rem;
+    padding: 15px;
+}
 @media screen and (max-width:1060px) {
     .header-content ul li{
         display: none;
